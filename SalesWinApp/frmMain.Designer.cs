@@ -1,4 +1,5 @@
-﻿namespace SalesWinApp
+﻿
+namespace SalesWinApp
 {
     partial class frmMain
     {
@@ -28,88 +29,106 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fstoreManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.orderManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.memberManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.memberManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orderManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orderDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(35, 122);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(473, 67);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "FStore Management";
-            // 
             // menuStrip1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fstoreManagementToolStripMenuItem});
+            this.memberManagerToolStripMenuItem,
+            this.orderManagerToolStripMenuItem,
+            this.orderDetailToolStripMenuItem,
+            this.productManagerToolStripMenuItem,
+            this.reportToolStripMenuItem,
+            this.profileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
-            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Size = new System.Drawing.Size(773, 24);
+            this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // fstoreManagementToolStripMenuItem
+            // memberManagerToolStripMenuItem
             // 
-            this.fstoreManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.orderManagementToolStripMenuItem,
-            this.productManagementToolStripMenuItem,
-            this.memberManagementToolStripMenuItem});
-            this.fstoreManagementToolStripMenuItem.Name = "fstoreManagementToolStripMenuItem";
-            this.fstoreManagementToolStripMenuItem.Size = new System.Drawing.Size(155, 24);
-            this.fstoreManagementToolStripMenuItem.Text = "Fstore Management";
+            this.memberManagerToolStripMenuItem.Name = "memberManagerToolStripMenuItem";
+            this.memberManagerToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.memberManagerToolStripMenuItem.Text = "Member";
+            //this.memberManagerToolStripMenuItem.Click += new System.EventHandler(this.memberManagerToolStripMenuItem_Click);
             // 
-            // orderManagementToolStripMenuItem
+            // orderManagerToolStripMenuItem
             // 
-            this.orderManagementToolStripMenuItem.Name = "orderManagementToolStripMenuItem";
-            this.orderManagementToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
-            this.orderManagementToolStripMenuItem.Text = "Order Management";
+            this.orderManagerToolStripMenuItem.Name = "orderManagerToolStripMenuItem";
+            this.orderManagerToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.orderManagerToolStripMenuItem.Text = "Order";
+            //this.orderManagerToolStripMenuItem.Click += new System.EventHandler(this.orderManagerToolStripMenuItem_Click);
             // 
-            // productManagementToolStripMenuItem
+            // orderDetailToolStripMenuItem
             // 
-            this.productManagementToolStripMenuItem.Name = "productManagementToolStripMenuItem";
-            this.productManagementToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
-            this.productManagementToolStripMenuItem.Text = "Product Management";
+            this.orderDetailToolStripMenuItem.Name = "orderDetailToolStripMenuItem";
+            this.orderDetailToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.orderDetailToolStripMenuItem.Text = "Order Detail";
+            this.orderDetailToolStripMenuItem.Click += new System.EventHandler(this.orderDetailsToolStripMenuItem_Click);
             // 
-            // memberManagementToolStripMenuItem
+            // productManagerToolStripMenuItem
             // 
-            this.memberManagementToolStripMenuItem.Name = "memberManagementToolStripMenuItem";
-            this.memberManagementToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
-            this.memberManagementToolStripMenuItem.Text = "Member Management";
+            this.productManagerToolStripMenuItem.Name = "productManagerToolStripMenuItem";
+            this.productManagerToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.productManagerToolStripMenuItem.Text = "Product";
+            //this.productManagerToolStripMenuItem.Click += new System.EventHandler(this.productManagerToolStripMenuItem_Click);
+            // 
+            // reportToolStripMenuItem
+            // 
+            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.reportToolStripMenuItem.Text = "Sales Report";
+            //this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
+            // 
+            // profileToolStripMenuItem
+            // 
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.profileToolStripMenuItem.Text = "Profile";
+            //this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(773, 496);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmMain";
-            this.Text = "frmMain";
+            this.Text = "Sales Management";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
-
         #endregion
-
-        private Label label1;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem fstoreManagementToolStripMenuItem;
-        private ToolStripMenuItem orderManagementToolStripMenuItem;
-        private ToolStripMenuItem productManagementToolStripMenuItem;
-        private ToolStripMenuItem memberManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem memberManagerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem orderManagerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem orderDetailToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productManagerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
     }
 }
+
+
+

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using BusinessObject;
+﻿using BusinessObject;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace DataAccess
 {
@@ -26,8 +23,8 @@ namespace DataAccess
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=18.136.108.204;uid=admin;pwd=Nguyenduy111;database=Assignment2_PRN211");
+                optionsBuilder.UseSqlServer("Server=(local);uid=sa;pwd=hiHihaHahoHoheHe21;database=Assignment2_PRN211;" +
+                    "TrustServerCertificate=true");
             }
         }
 
@@ -91,17 +88,17 @@ namespace DataAccess
 
                 entity.Property(e => e.UnitPrice).HasColumnType("money");
 
-                entity.HasOne(d => d.Order)
-                    .WithMany(p => p.OrderDetails)
-                    .HasForeignKey(d => d.OrderId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_OderDetail_Order");
+                //entity.HasOne(d => d.Order)
+                //    .WithMany(p => p.OrderDetails)
+                //    .HasForeignKey(d => d.OrderId)
+                //    .OnDelete(DeleteBehavior.ClientSetNull)
+                //    .HasConstraintName("FK_OderDetail_Order");
 
-                entity.HasOne(d => d.Product)
-                    .WithMany(p => p.OrderDetails)
-                    .HasForeignKey(d => d.ProductId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_OderDetail_Product");
+                //entity.HasOne(d => d.Product)
+                //    .WithMany(p => p.OrderDetails)
+                //    .HasForeignKey(d => d.ProductId)
+                //    .OnDelete(DeleteBehavior.ClientSetNull)
+                //    .HasConstraintName("FK_OderDetail_Product");
             });
 
             modelBuilder.Entity<Product>(entity =>

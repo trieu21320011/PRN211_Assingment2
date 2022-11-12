@@ -1,19 +1,12 @@
 ﻿using BusinessObject;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccess
 {
     public class MemberDAO
     {
         private static MemberDAO instance = null;
-        private static readonly object instanceLock = new object();
-        Assignment2_PRN211Context DBContext = new Assignment2_PRN211Context();
+        private static readonly object instanceLock = new();
+        Assignment2_PRN211Context DBContext = new();
 
         public static MemberDAO getInstance
         {
@@ -93,7 +86,7 @@ namespace DataAccess
         public Member CheckLogin(string email, string password)
         {
             Member loginMember = null;
-            
+
 
             var members = GetMemberList();
 
