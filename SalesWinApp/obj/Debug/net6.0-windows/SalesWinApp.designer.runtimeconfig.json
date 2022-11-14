@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\ntb19\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ntb19\\.nuget\\packages",
-      "D:\\TempDiskC\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\ASUS\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ASUS\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,

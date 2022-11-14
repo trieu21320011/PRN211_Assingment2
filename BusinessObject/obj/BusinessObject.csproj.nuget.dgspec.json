@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\K15.FPTU\\2022.Fall\\PRN211\\Assignment\\Assignment-02\\PRN211_Assingment2\\BusinessObject\\BusinessObject.csproj": {}
+    "C:\\Users\\ASUS\\source\\repos\\Assingment2_PRN211\\BusinessObject\\BusinessObject.csproj": {}
   },
   "projects": {
-    "D:\\K15.FPTU\\2022.Fall\\PRN211\\Assignment\\Assignment-02\\PRN211_Assingment2\\BusinessObject\\BusinessObject.csproj": {
+    "C:\\Users\\ASUS\\source\\repos\\Assingment2_PRN211\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\K15.FPTU\\2022.Fall\\PRN211\\Assignment\\Assignment-02\\PRN211_Assingment2\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\Assingment2_PRN211\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "D:\\K15.FPTU\\2022.Fall\\PRN211\\Assignment\\Assignment-02\\PRN211_Assingment2\\BusinessObject\\BusinessObject.csproj",
-        "packagesPath": "C:\\Users\\ntb19\\.nuget\\packages\\",
-        "outputPath": "D:\\K15.FPTU\\2022.Fall\\PRN211\\Assignment\\Assignment-02\\PRN211_Assingment2\\BusinessObject\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\source\\repos\\Assingment2_PRN211\\BusinessObject\\BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\source\\repos\\Assingment2_PRN211\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\TempDiskC\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ntb19\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,8 +67,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -81,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
