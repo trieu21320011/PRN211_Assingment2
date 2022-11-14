@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace SalesWinApp
 {
-    public partial class frmProduct : Form
+    public partial class frmOrder : Form
     {
         public string EmailLogin { get; set; }
 
-        public frmProduct()
+        public frmOrder()
         {
             InitializeComponent();
         }
