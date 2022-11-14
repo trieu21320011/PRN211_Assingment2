@@ -61,6 +61,7 @@ namespace SalesWinApp
             this.dgvOrderDetailList.RowTemplate.Height = 25;
             this.dgvOrderDetailList.Size = new System.Drawing.Size(846, 432);
             this.dgvOrderDetailList.TabIndex = 44;
+            this.dgvOrderDetailList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrderDetailList_CellDoubleClick);
             // 
             // btnDelete
             // 
@@ -71,6 +72,7 @@ namespace SalesWinApp
             this.btnDelete.TabIndex = 56;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -81,6 +83,7 @@ namespace SalesWinApp
             this.btnAdd.TabIndex = 55;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnLoad
             // 

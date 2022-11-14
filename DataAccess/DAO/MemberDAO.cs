@@ -1,23 +1,19 @@
 ﻿using BusinessObject;
 
-namespace DataAccess
+namespace DataAccess.DAO
 {
     public class MemberDAO
     {
         private static MemberDAO instance = null;
         private static readonly object instanceLock = new();
-        Assignment2_PRN211Context DBContext = new();
-
+        private Assignment2_PRN211Context DBContext = new();
         public static MemberDAO getInstance
         {
             get
             {
                 lock (instanceLock)
                 {
-                    if (instance == null)
-                    {
-                        instance = new MemberDAO();
-                    }
+                    if (instance == null) instance = new MemberDAO();
                     return instance;
                 }
             }
@@ -25,20 +21,16 @@ namespace DataAccess
 
         public List<Member> GetMemberList() => DBContext.Members.ToList();
 
-        public Member GetMemberByID(int memberID) => DBContext.Members.Find(memberID);
-        public Member GetMemberByEmail(string memberEmail)
+        public Member GetMemberByID(int memberID)
+            => DBContext.Members.Find(memberID)
+            ?? throw new ArgumentNullException();
+
+        public Member? GetMemberByEmail(string memberEmail)
         {
             var members = GetMemberList();
-
             Member member = null;
+            foreach (var x in members) if (x.Email.Equals(memberEmail)) member = x;
 
-            foreach (var mem in members)
-            {
-                if (mem.Email.Equals(memberEmail))
-                {
-                    member = mem;
-                }
-            }
             return member;
         }
 
@@ -49,10 +41,7 @@ namespace DataAccess
                 DBContext.Members.Add(member);
                 DBContext.SaveChanges();
             }
-            else
-            {
-                throw new Exception("Member is already exists.");
-            }
+            else throw new Exception("Member is already exists.");
         }
 
         public void Update(Member member)
@@ -69,25 +58,19 @@ namespace DataAccess
                 DBContext.Update(memberUpdate);
                 DBContext.SaveChanges();
             }
-            else
-            {
-                throw new Exception("Member is not exist.");
-            }
+            else throw new Exception("Member is not exist.");
         }
 
         public void Remove(int memberID)
         {
             var member = GetMemberByID(memberID);
-
             DBContext.Remove(member);
             DBContext.SaveChanges();
         }
 
-        public Member CheckLogin(string email, string password)
+        public Member? CheckLogin(string email, string password)
         {
             Member loginMember = null;
-
-
             var members = GetMemberList();
 
             foreach (var member in members)
@@ -98,8 +81,8 @@ namespace DataAccess
                     return loginMember;
                 }
             }
+
             return loginMember;
         }
-
     }
 }

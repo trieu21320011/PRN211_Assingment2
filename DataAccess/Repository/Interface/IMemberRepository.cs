@@ -1,6 +1,6 @@
 ﻿using BusinessObject;
 
-namespace DataAccess.Repository
+namespace DataAccess.Repository.Interface
 {
     public interface IMemberRepository
     {
@@ -10,7 +10,6 @@ namespace DataAccess.Repository
         void InsertMember(Member member);
         void DeleteMember(int memberID);
         void UpdateMember(Member member);
-
         Member CheckLogin(string email, string password);
     }
 }

@@ -61,14 +61,14 @@ namespace SalesWinApp
             }
         }
 
-        private void orderManagementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmOrder frm = new()
-            {
-                EmailLogin = EmailLogin
-            };
-            frm.Show();
-        }
+        //private void orderManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    frmOrder frm = new()
+        //    {
+        //        EmailLogin = EmailLogin
+        //    };
+        //    frm.Show();
+        //}
 
         private void productManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -157,7 +157,6 @@ namespace SalesWinApp
 
         //private void memberManagerToolStripMenuItem_Click(object sender, EventArgs e)
         //{
-
         //    if (FormShowed[1].Equals("Closed"))
         //    {
         //        MM = new frmMemberManager
