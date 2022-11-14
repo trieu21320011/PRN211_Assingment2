@@ -36,7 +36,7 @@ namespace DataAccess.DAO
 
         public void AddNew(Member member)
         {
-            if (GetMemberByID(member.Memberid) == null)
+            if (GetMemberByID(member.MemberId) == null)
             {
                 DBContext.Members.Add(member);
                 DBContext.SaveChanges();
@@ -46,10 +46,10 @@ namespace DataAccess.DAO
 
         public void Update(Member member)
         {
-            var memberUpdate = GetMemberByID(member.Memberid);
+            var memberUpdate = GetMemberByID(member.MemberId);
             if (memberUpdate != null)
             {
-                memberUpdate.Memberid = member.Memberid;
+                memberUpdate.MemberId = member.MemberId;
                 memberUpdate.CompanyName = member.CompanyName;
                 memberUpdate.Email = member.Email;
                 memberUpdate.City = member.City;

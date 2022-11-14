@@ -29,7 +29,7 @@ namespace SalesWinApp
         public void LoadProfile()
         {
             ActiveControl = label7;
-            txtMemberID.Text = Member.Memberid.ToString();
+            txtMemberID.Text = Member.MemberId.ToString();
             txtCompanyName.Text = Member.CompanyName;
             txtEmail.Text = Member.Email;
             txtCountry.Text = Member.Country;
@@ -51,7 +51,7 @@ namespace SalesWinApp
         {
             try
             {
-                List<Order> orderList = OrderRepository.GetOrderByMemberID(Member.Memberid);
+                List<Order> orderList = OrderRepository.GetOrderByMemberID(Member.MemberId);
                 List<OrderDetail> orderDetailList = new();
                 foreach (Order or in orderList) orderDetailList.Add(OrderDetailRepository.GetOrderDetailByOrderID(or.OrderId));
                 source = new BindingSource
@@ -88,7 +88,7 @@ namespace SalesWinApp
         {
             var member = new Member
             {
-                Memberid = Member.Memberid,
+                MemberId = Member.MemberId,
                 CompanyName = txtCompanyName.Text,
                 Email = txtEmail.Text,
                 Password = txtPassword.Text,
