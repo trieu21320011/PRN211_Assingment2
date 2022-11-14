@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using BusinessObject;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataAccess.Repository
+namespace DataAccess.Repository.Phong
 {
     public class OrderDetailRepository:IOrderDetailRepository
     {

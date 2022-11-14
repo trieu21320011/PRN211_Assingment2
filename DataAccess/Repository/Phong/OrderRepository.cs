@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Repository
-{
+namespace DataAccess.Repository.Phong
+{ 
     public class OrderRepository : IOrderRepository
     {
         private readonly Assignment2_PRN211Context _context;

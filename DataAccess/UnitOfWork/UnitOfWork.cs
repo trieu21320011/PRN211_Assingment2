@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BusinessObject;
 using DataAccess.Repository;
+using DataAccess.Repository.Phong;
 
 namespace DataAccess.UnitOfWork
 {
@@ -17,8 +18,8 @@ namespace DataAccess.UnitOfWork
         public UnitOfWork()
         {
             _context = new Assignment2_PRN211Context();
-            _orderRepository = new OrderRepository(_context);
-            _orderDetailRepository = new OrderDetailRepository(_context);   
+            /*_orderRepository = new OrderRepository(_context);
+            _orderDetailRepository = new  OrderDetailRepository(_context);   */
             _productForCartRepository = new ProductForCartRepository(_context);
         }
         public IOrderDetailRepository detailRepository => _orderDetailRepository;

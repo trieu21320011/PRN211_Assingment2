@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-﻿#nullable disable
-=======
+
 ﻿using System;
 using System.Collections.Generic;
->>>>>>> d2f9827 (CreateOrder)
+
 
 namespace BusinessObject
 {

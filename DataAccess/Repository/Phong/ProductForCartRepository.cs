@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessObject;
-namespace DataAccess.Repository
+namespace DataAccess.Repository.Phong
 {
     public class ProductForCartRepository : IProductForCartRepository
     {

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessObject;
-namespace DataAccess.Repository
-{
+namespace DataAccess.Repository.Phong
+{ 
     public interface IOrderRepository
     {
         void Add(Order order);

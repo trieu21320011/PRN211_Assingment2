@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessObject;
 using DataAccess.Repository;
+using DataAccess.Repository.Interface;
 using DataAccess.UnitOfWork;
 namespace SalesWinApp
 {
