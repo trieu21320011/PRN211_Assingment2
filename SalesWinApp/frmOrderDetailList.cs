@@ -11,6 +11,7 @@ namespace SalesWinApp
         public int OrderID;
         public Member? Member { get; set; }
 
+
         public frmOrderDetailList()
         {
             InitializeComponent();

@@ -101,10 +101,7 @@ D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWi
 D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.frmMemberDetail.resources
 D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.frmOrderDetailList.resources
 D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.frmOrderDetailProduct.resources
-D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.frmOrderManager.resources
-D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.frmProduct.resources
-D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.frmProductManager.resources
-D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.frmProfile.resources
+D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.frmOrderDetails.resources
 D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.csproj.GenerateResource.cache
 D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.GeneratedMSBuildEditorConfig.editorconfig
 D:\K15.FPTU\2022.Fall\PRN211\Assignment\Assignment-02\PRN211_Assingment2\SalesWinApp\obj\Debug\net6.0-windows\SalesWinApp.AssemblyInfoInputs.cache

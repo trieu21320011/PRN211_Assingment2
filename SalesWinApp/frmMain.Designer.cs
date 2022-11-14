@@ -63,6 +63,7 @@ namespace SalesWinApp
             this.memberManagerToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.memberManagerToolStripMenuItem.Text = "Member";
             //this.memberManagerToolStripMenuItem.Click += new System.EventHandler(this.memberManagerToolStripMenuItem_Click);
+
             // 
             // orderManagerToolStripMenuItem
             // 
@@ -70,6 +71,7 @@ namespace SalesWinApp
             this.orderManagerToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.orderManagerToolStripMenuItem.Text = "Order";
             //this.orderManagerToolStripMenuItem.Click += new System.EventHandler(this.orderManagerToolStripMenuItem_Click);
+
             // 
             // orderDetailToolStripMenuItem
             // 
@@ -77,13 +79,15 @@ namespace SalesWinApp
             this.orderDetailToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.orderDetailToolStripMenuItem.Text = "Order Detail";
             this.orderDetailToolStripMenuItem.Click += new System.EventHandler(this.orderDetailsToolStripMenuItem_Click);
+
             // 
             // productManagerToolStripMenuItem
             // 
             this.productManagerToolStripMenuItem.Name = "productManagerToolStripMenuItem";
             this.productManagerToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.productManagerToolStripMenuItem.Text = "Product";
-            //this.productManagerToolStripMenuItem.Click += new System.EventHandler(this.productManagerToolStripMenuItem_Click);
+            //this.productManagerToolStripMenuItem.Click += new System.EventHandler(this.???);
+
             // 
             // reportToolStripMenuItem
             // 
@@ -91,6 +95,7 @@ namespace SalesWinApp
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.reportToolStripMenuItem.Text = "Sales Report";
             //this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
+
             // 
             // profileToolStripMenuItem
             // 
@@ -98,6 +103,7 @@ namespace SalesWinApp
             this.profileToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.profileToolStripMenuItem.Text = "Profile";
             //this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
+
             // 
             // frmMain
             // 

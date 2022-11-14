@@ -1,5 +1,4 @@
 ﻿using BusinessObject;
-using DataAccess;
 using DataAccess.Repository;
 using DataAccess.Repository.Interface;
 
@@ -7,8 +6,8 @@ namespace SalesWinApp
 {
     public partial class frmOrderDetailProduct : Form
     {
-        private IProductRepository productRepository = new ProductRepository();
-        private IOrderRepository orderRepository = new OrderRepository();
+        //private IProductRepository productRepository = new ProductRepository();
+        //private IOrderRepository orderRepository = new OrderRepository();
         private IOrderDetailRepository orderDetailRepository = new OrderDetailRepository();
         private BindingSource source;
         public bool InsertOrUpdate { get; set; }
@@ -60,26 +59,24 @@ namespace SalesWinApp
 
         public void LoadDetailProductList()
         {
-            var products = productRepository.GetProducts();
-
+            //var products = productRepository.GetProducts();
             try
             {
                 source = new BindingSource
                 {
-                    DataSource = products
+                    //DataSource = products
                 };
                 dgvOrderProductList.DataSource = null;
                 dgvOrderProductList.DataSource = source;
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Load product list"); }
 
-            var orderList = orderRepository.GetOrders();
-
+            //var orderList = orderRepository.GetOrders();
             try
             {
                 source = new BindingSource
                 {
-                    DataSource = orderList
+                    //DataSource = orderList
                 };
                 dgvOrderID.DataSource = null;
                 dgvOrderID.DataSource = source;
@@ -89,7 +86,7 @@ namespace SalesWinApp
 
         private void btnClose_Click(object sender, EventArgs e) => Close();
 
-        public void ReloadODList(frmOrderDetailList frmOrderDetailList) => frmOrderDetailList.LoadOrderDetailList();
+        //public void ReloadODList(frmOrderDetailList frmOrderDetailList) => frmOrderDetailList.LoadOrderDetailList();
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
