@@ -1,3 +1,4 @@
+
 ﻿using BusinessObject;
 using Microsoft.EntityFrameworkCore;
 
@@ -27,7 +28,7 @@ namespace DataAccess
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=(local);uid=sa;pwd=hiHihaHahoHoheHe21;database=Assignment2_PRN211;" +
+                optionsBuilder.UseSqlServer("Server=18.136.108.204;uid=admin;pwd=Nguyenduy111;database=Assignment2_PRN211; " +
                     "TrustServerCertificate=true");
             }
         }
@@ -38,7 +39,7 @@ namespace DataAccess
             {
                 entity.ToTable("Member");
 
-                entity.Property(e => e.MemberId).ValueGeneratedNever();
+                entity.Property(e => e.Memberid).ValueGeneratedNever();
 
                 entity.Property(e => e.City)
                     .IsRequired()
@@ -72,7 +73,7 @@ namespace DataAccess
 
                 entity.Property(e => e.OrderDate).HasColumnType("datetime");
 
-                entity.Property(e => e.RequiredDate).HasColumnType("datetime");
+                entity.Property(e => e.RepuiredDate).HasColumnType("datetime");
 
                 entity.Property(e => e.ShippedDate).HasColumnType("datetime");
 
