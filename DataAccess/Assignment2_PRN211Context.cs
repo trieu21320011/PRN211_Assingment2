@@ -27,7 +27,7 @@ namespace DataAccess
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=(local);uid=sa;pwd=hiHihaHahoHoheHe21;database=Assignment2_PRN211;" +
+                optionsBuilder.UseSqlServer("Server=18.136.108.204;uid=admin;pwd=Nguyenduy111;database=Assignment2_PRN211; " +
                     "TrustServerCertificate=true");
             }
         }
